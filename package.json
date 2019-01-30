@@ -1,0 +1,31 @@
+{
+  "name": "bonesurf",
+  "version": "1.0.0",
+  "description": "learn node",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "babel-node buildScripts/startMessage.js",
+    "start": "babel-node buildScripts/srcServer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/westclox/bonesurf.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/westclox/bonesurf/issues"
+  },
+  "homepage": "https://github.com/westclox/bonesurf#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "babel-preset-latest": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "chalk": "^2.4.2",
+    "express": "^4.16.4",
+    "opn": "^5.4.0"
+  }
+}
