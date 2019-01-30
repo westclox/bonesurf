@@ -3,7 +3,6 @@ import path from 'path';
 export default {
   watch: true,
   devtool: 'inline-source-map',
-  output: false,
   mode: 'development',
   entry: [
     path.resolve(__dirname, 'client/index')
@@ -18,7 +17,7 @@ export default {
   module: {
     rules: [
       { test: /\.js$/, exclude: /node_modules/, loaders: ['babel-loader'] },
-      { test: /\.css$/, loaders: ['style', 'css'] }
+      { test: /\.css$/, use: ['style-loader', 'css-loader'] }
     ]
   }
 }
